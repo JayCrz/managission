@@ -7,7 +7,7 @@ class CreateTasks < ActiveRecord::Migration[6.0]
       t.integer :priority
       t.datetime :started_at
       t.datetime :finished_at
-      t.belongs_to :user_id, null: false, foreign_key: true
+      t.belongs_to :user, null: false, foreign_key: true
 
       t.timestamps
     end

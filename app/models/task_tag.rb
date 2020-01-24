@@ -1,4 +1,4 @@
 class TaskTag < ApplicationRecord
-  belongs_to :task_id
-  belongs_to :tag_id
+  belongs_to :task
+  belongs_to :tag
 end
